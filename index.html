@@ -7,6 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+    <style>
+      #customers {
+        border-collapse: collapse;
+      }
+
+      #customers td,
+      #customers th {
+        border: 1px solid #ddd;
+        padding: 4px;
+      }
+
+      #customers tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      #customers tr:hover {
+        background-color: #ddd;
+      }
+
+      #customers th {
+        text-align: left;
+        background-color: #4caf50;
+        color: white;
+      }
+    </style>
   </head>
   <body>
     <h1>
@@ -16,22 +41,39 @@
       Description
     </h2>
     <p>
-      This add-on was built to streamline workflows for those using google sheets for financial modeling. 
-      We will continue to release features as users request them. Please contact njasset10@gmail.com with any questions, comments, or concerns.
+      This add-on was built to streamline workflows for those using google
+      sheets for financial modeling. We will continue to release features as
+      users request them. Please contact njasset10@gmail.com with any questions,
+      comments, or concerns.
     </p>
-    <h2>
-      Terms
-    </h2>
-    <p>
-      Your use of this add-on implies you understand the add-on's intended purpose as explained at the time of
-      download or update. If you find the add-on helpful (or not), please let us know at the email noted above.
-    </p>
-    <h2>
-      Privacy
-    </h2>
-    <p>
-      This application needs access to the data within your google sheets file(s) in order to provide the workflow-streamlining features mentioned above and made clear at the time of download or update.
-      We use the data to which you provide access in order to enable those features alone. We do not store or share your data. 
-    </p>
+    <h2>Feature List as of 201905</h2>
+    <ul>
+      <li>
+        Autocolor Cells based on value
+        <table id="customers">
+          <tr>
+            <th>Value</th>
+            <th>Font Color</th>
+          </tr>
+          <tr>
+            <td>Hardcode</td>
+            <td>Blue</td>
+          </tr>
+          <tr>
+            <td>Formula Output</td>
+            <td>Black</td>
+          </tr>
+          <tr>
+            <td>Sheet Reference</td>
+            <td>Green</td>
+          </tr>
+        </table>
+      </li>
+    </ul>
+    <h2>Site Links</h2>
+    <ul>
+      <li><a href="index.html">Home Page</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+    </ul>
   </body>
 </html>
